@@ -27,7 +27,7 @@ interface PaginatedData<T> {
 
 export const pokeapi = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://pokeapi.co/api/v2/',
+    baseUrl: 'https://pokeapi.co/api/v2/',
   }),
   endpoints: (builder) => ({
     getPokemons: builder.query<PaginatedData<PokemonShortInfo>, { num: number; page: number }>({
